@@ -26,8 +26,8 @@ def contact():
     if form.validate_on_submit():
         msg = Message(
             subject=form.subject.data,
-            sender=(form.name.data, form.email.data),  # sender name + email from form
-            recipients=["yourmail@example.com"]       # replace with your Mailtrap inbox email
+            sender=(form.name.data, form.email.data),  
+            recipients=["yourmail@example.com"]       
         )
         msg.body = form.message.data
 
